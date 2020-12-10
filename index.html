@@ -13,7 +13,11 @@
   <body>
       <header class="conatiner-fluid">
 <div class="row bg-dark text-center text-white">
-  <div class="col-12"> <h1>Slap Game!</h1></div>
+  <div class="col-12"> <h1>Slap Game!</h1>
+    <span>Name:</span> <span id="nickname"></span>
+ <span>Health:</span> <span id="health">100</span>
+<span>Hits:</span> <span id="hits">0</span>
+</div>
 </div>
       </header>
 
@@ -29,9 +33,15 @@
 
 
 <footer class="container-fluid">
-<div class="row text-center">
-  <div class="col-12">
-    <button class="btn btn-danger btn-lg"> Slap</button>
+<div class="row text-center justify-content-around">
+  <div class="col-4">
+    <button onclick="slap()" class="btn btn-danger btn-lg"> Slap</button>
+  </div>
+  <div class="col-4">
+    <button onclick="kick()" class="btn btn-success btn-lg"> Kick</button>
+  </div>
+  <div class="col-4">
+    <button onclick="punch()" class="btn btn-primary btn-lg"> Punch</button>
   </div>
 </div>
 
