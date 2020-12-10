@@ -1,24 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Slap Game</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-      <header class="conatiner-fluid">
-<div class="row bg-dark text-center text-white">
-  <div class="col-12"> <h1>Slap Game!</h1>
-    <span>Name:</span> <span id="nickname"></span>
- <span>Health:</span> <span id="health">100</span>
-<span>Hits:</span> <span id="hits">0</span>
-</div>
-</div>
+<head>
+  <title>Slap Game</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="conatiner-fluid">
+    <div class="row bg-dark text-center text-white">
+      <div class="col-12" id="game-header">
+        <h1>Slap Game!</h1>
+        <div> <label for="name">Name:</label> <input type="text" name="name" required></div>
+        <span>Health:</span> <span id="health">100</span>
+        <span>Hits:</span> <span id="hits">0</span>
+      </div>
+      <div id="game-over" class="col-12"></div>
+    </div>
       </header>
 
 <main class="container-fluid">
